@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    padding: 0;
+}
+
+.container { 
+    height: auto;
+    position: relative;
+    border: 3px solid green; 
+}
+
+.center-content {
+    margin: 0;
+    position: absolute;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.center-vertical {
+    margin: 0;
+    position: relative;
+    width: auto;
+    top: 50%;
+    text-align: right;
+    -ms-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+}
+
+.display {
+    text-align: right;
+    font-size: 40px;
+    font-weight: 500;
+    padding: 5px;
+    background-color: rgb(8, 8, 8);
+    color: white;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 480px;
+    aspect-ratio: 0.75;
+}
+
+button {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.hugebox {
+    grid-column: span 4;
+}
+
+.bigbox {
+    grid-column: span 3;
+}
+
+.mediumbox {
+    grid-column: span 2;
+}
+
+.smallbox {
+    grid-column: span 1;
+}
+
+.digit, .clear, .reduce {
+    background-color: rgb(222, 222, 226);
+}
+
+.digit:hover, .clear:hover, .reduce:hover {
+    background-color: rgb(247, 245, 246);
+}
+
+.operator {
+    background-color: rgb(230, 147, 81);
+    color: white;
+}
+
+.operator:hover {
+    background-color: rgb(231, 175, 123);
+}
